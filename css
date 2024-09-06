@@ -1,0 +1,115 @@
+/* General reset and typography */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0D1B2A; /* Dark celestial/nighttime sky */
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Main container for centering the content */
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(circle at bottom, #0A2A43 0%, #081229 100%);
+  /* Mimics an ocean blending into the night sky */
+}
+
+/* Box that holds the prompt generator */
+.prompt-box {
+  background: rgba(255, 255, 255, 0.1); /* Transparent glass effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari */
+  backdrop-filter: blur(10px); /* Standard syntax */
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+/* Title Styling */
+h1 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #E0FBFC; /* Light cyan-like stars */
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+}
+
+/* Subtext below the title */
+.subtext {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #98C1D9; /* Soft blue like the moon on water */
+}
+
+/* Labels */
+label {
+  display: block;
+  font-size: 14px;
+  color: #98C1D9;
+  margin-bottom: 5px;
+}
+
+/* Input fields */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  font-size: 16px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling the button */
+button {
+  background-color: #3A506B; /* Ocean-deep blue */
+  color: #E0FBFC;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #1C2541; /* Darker shade for hover effect */
+  transform: scale(1.05); /* Slight hover animation */
+}
+
+/* Prompt display */
+.prompt-display {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #E0FBFC;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+  min-height: 50px;
+}
+
+/* Add some small hover interactions for the input fields */
+input:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(224, 251, 252, 0.5);
+}
+
+/* Add some padding for mobile responsiveness */
+@media (max-width: 768px) {
+  .prompt-box {
+    padding: 20px;
+    max-width: 90%;
+  }
+}
