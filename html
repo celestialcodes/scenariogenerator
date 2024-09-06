@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Celestial Prompt Generator</title>
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Link to Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Main container for the generator -->
+  <div class="main-container">
+    <div class="prompt-box">
+      <h1>Celestial Prompt Generator</h1>
+      <p class="subtext">Let the stars guide your story</p>
+
+      <!-- Input fields for the characters -->
+      <label for="character1">Character 1:</label>
+      <input type="text" id="character1" placeholder="Enter name of Character 1">
+
+      <label for="character2">Character 2:</label>
+      <input type="text" id="character2" placeholder="Enter name of Character 2">
+
+      <!-- Button to generate the prompt -->
+      <button onclick="generatePrompt()">Generate Prompt</button>
+
+      <!-- Area to display the generated prompt -->
+      <p id="prompt-display" class="prompt-display"></p>
+    </div>
+  </div>
+
+  <!-- Link to the external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
