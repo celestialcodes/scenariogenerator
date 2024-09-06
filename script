@@ -1,0 +1,26 @@
+function generatePrompt() {
+  // Get the values entered for the characters
+  const character1 = document.getElementById("character1").value || "Character 1";
+  const character2 = document.getElementById("character2").value || "Character 2";
+
+  // List of possible prompts
+  const prompts = [
+    `${character1} and ${character2} get caught in the rain.`,
+    `${character1} offers ${character2} their coat.`,
+    `${character1} and ${character2} start dancing under the stars.`,
+    `${character1} and ${character2} have a playful argument, which turns into laughter.`,
+    `${character1} teaches ${character2} how to dance.`,
+    `${character1} and ${character2} stumble upon an unexpected event.`,
+    `${character1} and ${character2} share a quiet moment by the fireplace.`,
+    `${character1} helps ${character2} with a difficult task.`,
+    `${character1} surprises ${character2} with a thoughtful gesture.`,
+  ];
+
+  // Generate a random index
+  const randomIndex = Math.floor(Math.random() * prompts.length);
+
+  // Get the random prompt from the array
+  const randomPrompt = prompts[randomIndex];
+
+  // Display the prompt in the appropriate area
+  document.getElementById("prompt-display").inner
